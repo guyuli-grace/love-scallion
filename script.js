@@ -93,15 +93,15 @@ function handleNoClick() {
 
     // Grow the Yes button bigger each time
     const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize)
-    yesBtn.style.fontSize = `${currentSize * 1.35}px`
-    const padY = Math.min(18 + noClickCount * 5, 60)
-    const padX = Math.min(45 + noClickCount * 10, 120)
+    yesBtn.style.fontSize = `${currentSize * 1.15}px`
+    const padY = Math.min(18 + noClickCount * 3, 45)
+    const padX = Math.min(45 + noClickCount * 6, 90)
     yesBtn.style.padding = `${padY}px ${padX}px`
 
     // Shrink No button to contrast
     if (noClickCount >= 2) {
         const noSize = parseFloat(window.getComputedStyle(noBtn).fontSize)
-        noBtn.style.fontSize = `${Math.max(noSize * 0.85, 10)}px`
+        noBtn.style.fontSize = `${Math.max(noSize * 0.90, 11)}px`
     }
 
     // Swap cat GIF through stages
