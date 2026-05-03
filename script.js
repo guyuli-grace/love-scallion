@@ -93,9 +93,9 @@ function handleNoClick() {
 
     // Grow the Yes button bigger each time
     const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize)
-    yesBtn.style.fontSize = `${currentSize * 1.1}px`
-    const padY = Math.min(18 + noClickCount * 2, 45)
-    const padX = Math.min(45 + noClickCount * 4, 90)
+    yesBtn.style.fontSize = `${currentSize * 1.13}px`
+    const padY = Math.min(18 + noClickCount * 3, 45)
+    const padX = Math.min(45 + noClickCount * 6, 90)
     yesBtn.style.padding = `${padY}px ${padX}px`
 
     // Shrink No button to contrast
